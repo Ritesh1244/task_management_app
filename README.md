@@ -37,3 +37,35 @@ Use this email and password to log in and explore the features of the applicatio
 ```bash
 npm clone <repository-url>
 cd task_management_app
+
+Setup Backend
+Navigate to the backend directory:
+bash
+Copy code
+cd backend
+Install dependencies:
+bash
+Copy code
+npm install
+Create a .env file and add your environment variables (e.g., database connection string, JWT secret).
+Start the server:
+bash
+Copy code
+npm start
+Setup Frontend
+Navigate to the frontend directory:
+bash
+Copy code
+cd frontend
+Install dependencies:
+bash
+Copy code
+npm install
+Start the client:
+bash
+Copy code
+npm start
+Usage
+Visit the live demo link provided above.
+Log in with the test credentials provided or sign up for a new account.
+Start managing your tasks by creating, viewing, editing, or deleting them.
