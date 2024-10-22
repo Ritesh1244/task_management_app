@@ -3,12 +3,13 @@
 ## Live Demo
 You can access the live application at: [Task Management App Live](https://task-management-app-4wkt.vercel.app/login)
 
-**Test Login:**
-if you are just want to see how my Task_application working you can use my email and password for that 
-- Email: `rite2379@gmail.com`
-- Password: `12345`
+### Test Login
+If you want to see how my Task Management application works, you can use the following credentials:
 
-Use this email and password to log in and explore the features of the application.
+- **Email:** `rite2379@gmail.com`
+- **Password:** `12345`
+
+---
 
 ## Features
 - User Authentication (Login/Signup)
@@ -16,56 +17,64 @@ Use this email and password to log in and explore the features of the applicatio
 - View tasks in a user-friendly interface
 - Responsive design for both mobile and desktop devices
 
-## Technologies Used
-- **Frontend**:
-  - React
-  - Axios (for API calls)
-  - CSS/SCSS
-- **Backend**:
-  - Node.js
-  - Express
-  - MongoDB (or any database of your choice)
-  - JWT (for authentication)
+---
 
-## Installation
+## Technologies Used
+
+### Frontend:
+- React
+- Axios (for API calls)
+- CSS/SCSS
+
+### Backend:
+- Node.js
+- Express
+- MongoDB (or any database of your choice)
+- JWT (for authentication)
+
+---
+
+## Installation Instructions
 
 ### Prerequisites
 - Node.js (version 14 or higher)
-- MongoDB (or your choice of database)
+- MongoDB (or your preferred database)
 
-### Clone the Repository
+---
+
+### Setup Steps
+
+### Backend Setup
+
+#### 1. Navigate to the Backend Directory
 ```bash
-npm clone <repository-url>
-cd task_management_app
-
-Setup Backend
-Navigate to the backend directory:
-bash
-Copy code
 cd backend
-Install dependencies:
-bash
-Copy code
+#### 2. Install Dependencies
+-Run the following command to install all necessary dependencies:
 npm install
-Create a .env file and add your environment variables (e.g., database connection string, JWT secret).
-Start the server:
-bash
-Copy code
+#### 3. Create a .env File
+Create a .env file in the backend directory and add the following environment variables:
+
+# .env
+MONGO_URI=<your-mongodb-connection-string>
+JWT_SECRET=<your-jwt-secret>
+PORT=5000
+
+#### 4. Start the Backend Server
+Now, start the backend server by running:
 npm start
-Setup Frontend
-Navigate to the frontend directory:
-bash
-Copy code
+### Frontend Setup
+
+#### 5. Navigate to the Frontend Directory
+In another terminal window, navigate to the frontend directory:
 cd frontend
-Install dependencies:
+
+#### 6. Install Dependencies
+Install the necessary frontend dependencies by running:
+
 bash
 Copy code
 npm install
-Start the client:
-bash
-Copy code
-npm start
-Usage
-Visit the live demo link provided above.
-Log in with the test credentials provided or sign up for a new account.
-Start managing your tasks by creating, viewing, editing, or deleting them.
+#### 6. Start the Frontend Application
+Finally, start the frontend by running:
+npm run dev 
