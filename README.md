@@ -64,6 +64,8 @@ PORT=5000
 Now, start the backend server by running:
 npm start
 
+---
+
 ### Setup Steps
 ### Fromtend
 
