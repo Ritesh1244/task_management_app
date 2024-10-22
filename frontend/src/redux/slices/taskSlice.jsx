@@ -6,7 +6,7 @@ const getToken = () => localStorage.getItem("token");
 
 
 export const fetchTasks = createAsyncThunk('tasks/fetchTasks', async () => {
-    const response = await axios.get('http://localhost:3000/task/alltasks', {
+    const response = await axios.get('https://task-management-app-nu-seven.vercel.app/task/alltasks', {
         headers: { authorization: getToken() },
     });
     return response.data.tasks; 
@@ -14,7 +14,7 @@ export const fetchTasks = createAsyncThunk('tasks/fetchTasks', async () => {
 
 
 export const ImportantTask = createAsyncThunk('tasks/fetchImportantTasks', async () => {
-    const response = await axios.get('http://localhost:3000/task/important', {
+    const response = await axios.get('https://task-management-app-nu-seven.vercel.app/important', {
         headers: { authorization: getToken() },
     });
     return response.data.tasks; 
@@ -22,7 +22,7 @@ export const ImportantTask = createAsyncThunk('tasks/fetchImportantTasks', async
 
 // Async thunk to create a new task
 export const createTask = createAsyncThunk('tasks/createTask', async (taskData, { dispatch }) => {
-    const response = await axios.post('http://localhost:3000/task/create', taskData, {
+    const response = await axios.post('https://task-management-app-nu-seven.vercel.app/task/create', taskData, {
         headers: { authorization: getToken() },
     });
     dispatch(fetchTasks()); 
@@ -32,7 +32,7 @@ export const createTask = createAsyncThunk('tasks/createTask', async (taskData, 
 
 export const updateTask = createAsyncThunk('tasks/updateTask', async ({ taskId, updates }, { rejectWithValue }) => {
     try {
-        const response = await axios.patch(`http://localhost:3000/task/${taskId}`, updates, {
+        const response = await axios.patch(`https://task-management-app-nu-seven.vercel.app/task/${taskId}`, updates, {
             headers: { authorization: getToken() },
         });
         return response.data; 
@@ -43,7 +43,7 @@ export const updateTask = createAsyncThunk('tasks/updateTask', async ({ taskId, 
 
 // Async thunk to delete a task
 export const deleteTask = createAsyncThunk('tasks/deleteTask', async (taskId, { dispatch }) => {
-    await axios.delete(`http://localhost:3000/task/${taskId}`, {
+    await axios.delete(`https://task-management-app-nu-seven.vercel.app/task/${taskId}`, {
         headers: { authorization: getToken() },
     });
     dispatch(fetchTasks()); // Refetch tasks after deletion
@@ -53,7 +53,7 @@ export const deleteTask = createAsyncThunk('tasks/deleteTask', async (taskId, { 
 export const toggleImportant = createAsyncThunk('tasks/toggleImportant', async (taskId, { getState, dispatch }) => {
     const task = getState().tasks.taskList.find(t => t._id === taskId);
     const updates = { important: !task.important };
-    await axios.patch(`http://localhost:3000/task/${taskId}`, updates, {
+    await axios.patch(`https://task-management-app-nu-seven.vercel.app/task/${taskId}`, updates, {
         headers: { authorization: getToken() },
     });
     dispatch(fetchTasks()); // Refetch tasks after update
@@ -63,7 +63,7 @@ export const toggleImportant = createAsyncThunk('tasks/toggleImportant', async (
 export const toggleCompletion = createAsyncThunk('tasks/toggleCompletion', async (taskId, { getState, dispatch }) => {
     const task = getState().tasks.taskList.find(t => t._id === taskId);
     const updates = { completed: !task.completed };
-    await axios.patch(`http://localhost:3000/task/${taskId}`, updates, {
+    await axios.patch(`https://task-management-app-nu-seven.vercel.app/task/${taskId}`, updates, {
         headers: { authorization: getToken() },
     });
     dispatch(fetchTasks()); // Refetch tasks after update
