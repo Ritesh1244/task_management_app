@@ -43,7 +43,7 @@ export const updateTask = createAsyncThunk('tasks/updateTask', async ({ taskId, 
 
 // Async thunk to delete a task
 export const deleteTask = createAsyncThunk('tasks/deleteTask', async (taskId, { dispatch }) => {
-    await axios.delete(`https://task-management-app-eta.vercel.app/${taskId}`, {
+    await axios.delete(`https://task-management-app-eta.vercel.app/task/${taskId}`, {
         headers: { authorization: getToken() },
     });
     dispatch(fetchTasks()); // Refetch tasks after deletion
@@ -53,7 +53,7 @@ export const deleteTask = createAsyncThunk('tasks/deleteTask', async (taskId, { 
 export const toggleImportant = createAsyncThunk('tasks/toggleImportant', async (taskId, { getState, dispatch }) => {
     const task = getState().tasks.taskList.find(t => t._id === taskId);
     const updates = { important: !task.important };
-    await axios.patch(`https://task-management-app-eta.vercel.app/${taskId}`, updates, {
+    await axios.patch(`https://task-management-app-eta.vercel.app/task/${taskId}`, updates, {
         headers: { authorization: getToken() },
     });
     dispatch(fetchTasks()); // Refetch tasks after update
@@ -63,7 +63,7 @@ export const toggleImportant = createAsyncThunk('tasks/toggleImportant', async (
 export const toggleCompletion = createAsyncThunk('tasks/toggleCompletion', async (taskId, { getState, dispatch }) => {
     const task = getState().tasks.taskList.find(t => t._id === taskId);
     const updates = { completed: !task.completed };
-    await axios.patch(`https://task-management-app-eta.vercel.app/${taskId}`, updates, {
+    await axios.patch(`https://task-management-app-eta.vercel.app/task/${taskId}`, updates, {
         headers: { authorization: getToken() },
     });
     dispatch(fetchTasks()); // Refetch tasks after update
