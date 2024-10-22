@@ -1,0 +1,88 @@
+/* Container for the signup form */
+.signup-container {
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Signup form layout */
+.signup-container > form {
+    display: flex; /* Use flex for layout */
+    flex-direction: column; /* Column layout */
+    gap: 10px; /* Spacing between elements */
+    background-color: white; /* Background color */
+    padding: 32px 48px; /* Padding around the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 8px 8px 24px rgba(66, 68, 90, 1); /* Box shadow for depth */
+}
+
+/* Center heading in the signup form */
+.signup-container > form > h1 {
+    margin-bottom: 20px; /* Spacing below heading */
+    text-align: center; /* Center the heading text */
+}
+
+/* Each input wrapper */
+.signup-container div {
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Column layout */
+}
+
+/* Input styles */
+.signup-container input {
+    width: 100%; /* Full width */
+    font-size: 20px; /* Font size for input */
+    padding: 10px; /* Padding for input */
+    border: none; /* No border */
+    outline: none; /* No outline */
+    border-bottom: 1px solid black; /* Bottom border for input */
+}
+
+/* Placeholder styles */
+.signup-container input::placeholder {
+    font-size: 12px; /* Font size for placeholder */
+    font-style: italic; /* Italic for placeholder text */
+}
+
+/* Button styles */
+.signup-container button {
+    background-color: purple; /* Button color */
+    border: none; /* No border */
+    font-size: 20px; /* Font size for button */
+    color: white; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside button */
+    cursor: pointer; /* Pointer on hover */
+    margin: 10px 0; /* Margin above and below */
+}
+
+/* Container for password input */
+.password-container {
+    position: relative; /* Position for child elements */
+    margin-bottom: 15px; /* Spacing below */
+}
+
+/* Wrapper for password input and icon */
+.password-input-wrapper {
+    display: flex; /* Flex layout */
+    align-items: center; /* Center items vertically */
+}
+
+/* Input inside password wrapper */
+.password-input-wrapper input {
+    width: 100%; /* Full width for input */
+    padding-right: 40px; /* Space for the icon */
+}
+
+/* Icon styles */
+.icon-wrapper {
+    position: absolute; /* Position relative to parent */
+    right: 10px; /* Positioning */
+    cursor: pointer; /* Pointer on hover */
+    display: flex; /* Flex layout */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 100%; /* Full height of the input */
+}

@@ -1,0 +1,127 @@
+/* Overlay style */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(55, 65, 81, 0.8);
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Modal positioning */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    z-index: 20;
+}
+
+/* Modal content styling */
+.modal-content {
+    width: 40%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-sizing: border-box;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal header: Flexbox for Update Task and Cross Icon */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Heading style */
+.modal-header h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Cross icon style */
+.cross-icon {
+    font-size: 32px;
+    cursor: pointer;
+    color: #e53e3e;
+}
+
+/* Form group style */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Input fields styling */
+.input-title,
+.input-description,
+.input-date,
+.input-priority,
+.input-completed {
+    width: 100%;
+    padding: 15px;
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-title:focus,
+.input-description:focus,
+.input-date:focus,
+.input-priority:focus,
+.input-completed:focus {
+    background-color: #e5e7eb;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Textarea specific styling */
+.input-description {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Form actions (buttons) styling */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-submit,
+.btn-cancel {
+    width: 48%;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: #38a169; /* Green */
+    color: #fff;
+}
+
+.btn-cancel {
+    background-color: #e53e3e; /* Red */
+    color: #fff;
+}
+
+.btn-submit:hover {
+    background-color: #2f855a;
+}
+
+.btn-cancel:hover {
+    background-color: #c53030;
+}

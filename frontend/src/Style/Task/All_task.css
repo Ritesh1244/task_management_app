@@ -1,0 +1,36 @@
+.all-tasks-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure space between the heading and button */
+    padding: 20px;
+}
+
+.all-tasks-container h1 {
+    font-size: 34px;
+    margin-bottom: 0; /* Remove margin to align with button */
+    padding-left: 10px;
+}
+
+.add-task-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #41BFBF;
+    padding: 5px 12px; /* Smaller padding for a smaller button */
+    border-radius: 20px; /* Rounded corners */
+    color: white;
+    font-size: 14px; /* Smaller font size */
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.add-task-container:hover {
+    background-color: #39A7A7; /* Darker hover effect */
+}
+
+.add-task-container svg {
+    margin-right: 5px; /* Smaller space between icon and text */
+    width: 16px; /* Adjust icon size */
+    height: 16px;
+}

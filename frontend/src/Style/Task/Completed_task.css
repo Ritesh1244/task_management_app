@@ -1,0 +1,11 @@
+.all-tasks-container2 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-tasks-container2 h1 {
+    font-size: 34px;
+    margin-bottom: 0; /* Remove margin to align with button */
+    padding-left: 10px;
+}

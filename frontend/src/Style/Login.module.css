@@ -1,0 +1,102 @@
+/* Login.module.css */
+
+/* Container for the login form */
+.login-container {
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #f0f0f0; /* Optional: Add a background color */
+}
+
+/* Login form styles */
+.login-form {
+    background-color: white; /* Background color */
+    padding: 32px 48px; /* Padding around the form */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 400px; /* Max width for the form */
+    width: 100%; /* Full width up to max-width */
+    box-shadow: 8px 8px 24px rgba(66, 68, 90, 1); /* Box shadow for depth */
+}
+
+/* Center heading in the login container */
+.login-form > h1 {
+    margin-bottom: 20px; /* Spacing below heading */
+    text-align: center; /* Center the heading text */
+}
+
+/* Form layout */
+.login-form > form {
+    display: flex; /* Use flex for layout */
+    flex-direction: column; /* Column layout */
+    gap: 10px; /* Spacing between elements */
+}
+
+/* Each input wrapper */
+.login-form div {
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Column layout */
+}
+
+/* Input styles */
+.login-form input {
+    width: 100%; /* Full width */
+    font-size: 18px; /* Font size */
+    padding: 10px; /* Padding for input */
+    border: none; /* No border */
+    outline: none; /* No outline */
+    border-bottom: 1px solid black; /* Bottom border for input */
+}
+
+/* Placeholder styles */
+.login-form input::placeholder {
+    font-size: 14px; /* Placeholder font size */
+    font-style: italic; /* Italic for placeholder text */
+}
+
+/* Button styles */
+.login-form button {
+    background-color: purple; /* Button color */
+    border: none; /* No border */
+    font-size: 20px; /* Font size for button */
+    color: white; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding inside button */
+    cursor: pointer; /* Pointer on hover */
+    margin: 10px 0; /* Margin above and below */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for button */
+.login-form button:hover {
+    background-color: darkviolet; /* Darker color on hover */
+}
+
+/* Container for password input */
+.password-container {
+    position: relative; /* Position for child elements */
+    margin-bottom: 15px; /* Spacing below */
+}
+
+/* Wrapper for password input and icon */
+.password-input-wrapper {
+    display: flex; /* Flex layout */
+    align-items: center; /* Center items vertically */
+}
+
+/* Input inside password wrapper */
+.password-input-wrapper input {
+    width: 100%; /* Full width for input */
+    padding-right: 40px; /* Space for the icon */
+}
+
+/* Icon styles */
+.icon-wrapper {
+    position: absolute; /* Position relative to parent */
+    right: 10px; /* Positioning */
+    cursor: pointer; /* Pointer on hover */
+    display: flex; /* Flex layout */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 100%; /* Full height of the input */
+}

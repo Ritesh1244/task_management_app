@@ -1,0 +1,25 @@
+.Home-container {
+    display: flex;
+    background-color: #0A0A0F; 
+    min-height: 100vh; /* Make sure it takes at least the full viewport height */
+    gap: 16px;
+    color: white;
+}
+
+.Home-container1 {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    width: 18.6667%;
+    border-style: solid;
+    border: 2px solid #6b7280; /* Tailwind's gray-500 */
+    border-radius: 12px;
+}
+
+.Home-container2 {
+    padding-top: 16px;
+    width: 83.3333%;
+    /* Make the container height adjust dynamically */
+    min-height: 100%;
+    height: auto; /* Let it grow based on content */
+    overflow-y: auto; /* Allow scrolling if the content grows beyond the viewport */
+}

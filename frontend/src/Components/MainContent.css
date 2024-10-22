@@ -1,0 +1,180 @@
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    gap: 24px 16px; /* 24px vertical gap, 16px horizontal gap */
+    padding: 16px; /* Padding around the grid */
+}
+
+/* Task item styles */
+.task-item {
+    background-color: #f9f9f9; /* Light background color for each task */
+    padding: 20px; /* Padding inside the task item */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a card effect */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align items to the start */
+    min-height: 200px; /* Set minimum height for the task item */
+    color: #333; /* Darker text color */
+}
+
+/* Adjusted height for add-task item */
+.add-task-item {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 200px; /* Match the height of the task items */
+    border: 1px dashed #ccc; /* Use a dashed border to indicate it's clickable */
+    border-radius: 8px; /* Add some rounding to the corners */
+    background-color: #f9f9f9; /* Background color */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+/* Rest of your CSS remains the same */
+.task-item h3 {
+    font-size: 20px; /* Increased font size for better visibility */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.task-item p {
+    font-size: 16px; /* Font size for the description */
+    color: #666; /* Gray color for description text */
+    margin-top: 12px; /* Add space above the description */
+    flex-grow: 1; /* Make sure the description takes up available space */
+}
+
+.task-button {
+    margin-top: auto; /* Pushes the button to the bottom of the box */
+    align-self: flex-start; /* Aligns the button to the left */
+    display: flex; /* Use flexbox for action buttons */
+    justify-content: space-between; /* Space between button and action icons */
+    width: 100%; /* Make button container full width */
+}
+
+.task-button p {
+    margin-left: 30px; /* Remove default margin for the paragraph */
+    font-size: 14px; /* Adjust font size if needed */
+    color: #666; /* Color for the date text */
+}
+
+.task-button button {
+    padding: 4px 8px; /* Smaller padding for the button */
+    background-color: #f44336; /* Red background for the button */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; /* Smaller font size for the button */
+}
+
+.task-button button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+/* Action icons styles */
+.task-action {
+    display: flex; /* Align icons in a row */
+    gap: 8px; /* Space between icons */
+}
+
+.task-action button {
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 4px; /* Add some padding */
+    font-size: 20px; /* Increase icon size */
+    transition: transform 0.2s, color 0.2s; /* Smooth transition for hover effects */
+}
+
+.task-action button:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    background: none; /* Ensure no background on hover */
+}
+
+/* Specific colors for action icons */
+.task-action button:nth-child(1) { /* Heart icon */
+    color: #ff4081; /* Customize color for the heart icon */
+}
+
+.task-action button:nth-child(2) { /* Edit icon */
+    color: #2196F3; /* Blue color for the edit icon */
+}
+
+.task-action button:nth-child(3) { /* Delete icon */
+    color: #f44336; /* Red color for the delete icon */
+}
+
+/* Change color on hover for each icon */
+.task-action button:nth-child(1):hover { /* Heart icon hover */
+    color: #e91e63; /* Slightly darker pink for heart */
+}
+
+.task-action button:nth-child(2):hover { /* Edit icon hover */
+    color: #1976D2; /* Darker blue for edit icon */
+}
+
+.task-action button:nth-child(3):hover { /* Delete icon hover */
+    color: #d32f2f; /* Darker red for delete icon */
+}
+
+.add-task-item {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 200px; /* Match the height of the task items */
+    border: 1px dashed #ccc; /* Use a dashed border to indicate it's clickable */
+    border-radius: 8px; /* Add some rounding to the corners */
+    background-color: #f9f9f9; /* Background color */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+    transition: background-color 0.3s, transform 0.3s; /* Add smooth transitions */
+}
+
+/* Hover effect for add-task item */
+.add-task-item:hover {
+    background-color: #eaeaea; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly enlarge the item */
+}
+
+.add-icon {
+    font-size: 40px; /* Set font size for the icon */
+    margin-right: 8px; /* Add some space between the icon and text */
+    transition: transform 0.3s; /* Smooth transition for icon scaling */
+}
+
+/* Scale icon on hover */
+.add-task-item:hover .add-icon {
+    transform: scale(1.2); /* Enlarge the icon on hover */
+}
+
+/* New styles for task buttons */
+.task-button .complete {
+    background-color: green; /* Green background for completed tasks */
+}
+
+.task-button .incomplete {
+    background-color: red; /* Red background for incomplete tasks */
+}
+
+.completed-task-button {
+    background-color: green;
+    color: white;
+}
+
+.incomplete-task-button {
+    background-color: red;
+    color: white;
+}
+
+/* Existing styles... */
+
+.icon {
+    color: #ccc; /* Default color */
+    transition: color 0.3s;
+}
+
+.icon.filled {
+    color: red; /* Color when important */
+}
+
+/* Other styles... */
