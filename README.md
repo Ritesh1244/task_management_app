@@ -1,7 +1,8 @@
 # Task Management Application
 
 ## Live Demo
-You can access the live application at: [Task Management App Live]([https://task-management-app-4wkt.vercel.app/login](https://task-management-app-ui.vercel.app/login))
+You can access the live application at: [Task Management App Live](https://task-management-app-ui.vercel.app/login)
+
 
 ### Test Login
 If you want to see how my Task Management application works, you can use the following credentials:
