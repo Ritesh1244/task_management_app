@@ -39,7 +39,7 @@ function Signup() {
             return handleError('All fields are required');
         }
         try {
-            const response = await fetch('https://task-management-app-nu-seven.vercel.app/auth/signup', {
+            const response = await fetch('https://task-management-app-eta.vercel.app/auth/signup', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(signupinfo),
