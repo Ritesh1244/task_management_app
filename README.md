@@ -63,18 +63,20 @@ PORT=5000
 #### 4. Start the Backend Server
 Now, start the backend server by running:
 npm start
-### Frontend Setup
 
-#### 5. Navigate to the Frontend Directory
+### Setup Steps
+### Fromtend
+
+#### 1. Navigate to the Frontend Directory
 In another terminal window, navigate to the frontend directory:
 cd frontend
 
-#### 6. Install Dependencies
+#### 2. Install Dependencies
 Install the necessary frontend dependencies by running:
 
 bash
 Copy code
 npm install
-#### 6. Start the Frontend Application
+#### 3. Start the Frontend Application
 Finally, start the frontend by running:
 npm run dev 
